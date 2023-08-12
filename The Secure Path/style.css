@@ -1,0 +1,73 @@
+/*/ allows for a responsive webpage new skill. Find out how to make it fit correctly on mobile. */
+* {
+    box-sizing: border-box;
+}
+/*/ ChatGPT recommended Georgia for a font and a white or grey background. I need to consider other colorschemes. */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0px;
+    background: #5f6265;
+}
+
+/*/ replace the plain black background with an image */
+.header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: black;
+}  
+
+h1, h2, h3, h5 {
+    color: #24FFAF;
+}
+
+/*/ Blog post column size and float */
+.columnA {
+    float: left;
+    width: 80%;
+}
+
+/*/ About Me and contact info column size and float */
+.columnB {
+    float: left;
+    width: 20%;
+    padding-left: 20px;
+}
+
+/*/ Size and background color for all pics for columnA and columnB. Width:fit-content; to stop background color from extending too far. */
+.pic {
+    background-color: #D92E09;
+    width:fit-content;
+    padding: 10px;
+}
+
+/*/ Auto size to fit images to .pic */
+img {
+    height: 100%;
+}
+
+/*/ background color for post content. */
+.post {
+    background-color: black;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/*/ places elements as if columnA and columnB do not exist. */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: black;
+    margin-top: 20px;
+}
+
+/*/ changes text color to white for text in posts to appear over the black background. */
+p {
+    color: white;
+}
